@@ -20,8 +20,8 @@ function cargarProductos() {
     ];
 
     let precios = [
-        "Q 10.00", "Q 15.00", "Q 20.00", "Q 25.00", "Q 30.00",
-        "Q 35.00", "Q 40.00", "Q 45.00", "Q 50.00", "Q 55.00"
+        "Q 50.00", "Q 15.00", "Q 17.00", "Q 32.00", "Q 22.00",
+        "Q 20.00", "Q 38.00", "Q 35.00", "Q 90.00", "Q 55.00"
     ];
 
     dataProductos.forEach((nombre, index) => {

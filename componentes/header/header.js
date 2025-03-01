@@ -1,24 +1,24 @@
-function mostrarMenu(){
+import { carrito } from "../catalogo/data.js";  // Importamos el carrito desde data.js
+
+function mostrarMenu() {
     let mmmenu = document.createElement('div');
     mmmenu.className = "m-menu";
 
-   let loogo = document.createElement('img');
+    let loogo = document.createElement('img');
     loogo.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREAzCy3sSEv3ORT4IVh9aMqW8EsbF-LWe6AQ&s";
-    mmmenu.appendChild(loogo) 
-    
+    mmmenu.appendChild(loogo);
+
     let nombre = document.createElement('h1');
     nombre.innerText = "Productos Marcados";
-    mmmenu.appendChild(nombre)
+    mmmenu.appendChild(nombre);
 
     let numero = document.createElement('div');
-    numero.innerText = "5"
+    numero.innerText = carrito.length; 
     numero.className = "Numeros";
 
-    mmmenu.appendChild(numero)
-
-  
+    mmmenu.appendChild(numero);
 
     return mmmenu;
 }
 
-export {mostrarMenu}
+export { mostrarMenu };

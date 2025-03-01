@@ -24,17 +24,9 @@
 }
 
 .producto-item.seleccionado {
-    background: rgb(106, 158, 138);
-    color: white;
-}
-
-
-.producto-item.marcac:hover{
-    background-color: #e74c3c;
-}
-
-.producto-item:hover {
-    transform: scale(1.05); 
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .producto-item .imagen {
@@ -62,31 +54,45 @@
 
 .producto-item .precio {
     font-size: 1rem;
-    color: #000000;
+    color: #c2af04;
     font-weight: bold;
     margin-bottom: 10px;
+    
 }
 
-.precio.seleccionado{
-    color: white;
-}
 
-.precio-container {
+.precio-c {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 8px;
     padding: 0 10px;
+    width: 100%; 
+    color: rgb(133, 6, 6);
 }
 
-.precio {
-    font-size: 16px;
-    font-weight: bold;
-    color: green;
+
+.precio-c button {
+    margin-left: 10px; 
+}
+
+.e-agregar {
+    background-color: #2ecc71; 
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.e-agregar:hover {
+    background-color: #27ae60;
 }
 
 .e-eliminar {
-    background-color: #e74c3c;
+    background-color: #000000;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -98,4 +104,17 @@
 
 .e-eliminar:hover {
     background-color: #c0392b;
+}
+
+.Numeros {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #000000; 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    display: inline-block;
+    min-width: 30px;
+    text-align: center;
+    margin-left: 10px;
 }

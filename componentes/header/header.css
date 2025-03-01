@@ -20,6 +20,7 @@
 .m-menu h1 {
     grid-column: 3/4;
     grid-row: 1/2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
     font-size: 2rem;
     text-align: end;

@@ -1,4 +1,4 @@
-import { eliminarProducto } from "./funcionesProducto.js";
+import { agregarProducto, eliminarProducto } from "./funcionesProducto.js";
 
 function producto(nombre, imagenSrc, precioTexto) {
     let ppc = document.createElement('div');
@@ -16,16 +16,15 @@ function producto(nombre, imagenSrc, precioTexto) {
     nombreProducto.textContent = nombre;
 
     let precioContainer = document.createElement('div');
-    precioContainer.className = "precio-container";
+    precioContainer.className = "precio-c";
 
     let precio = document.createElement('div');
     precio.className = "precio";
     precio.textContent = precioTexto;
 
-    let botonEliminar = eliminarProducto();
-
+    let botonAgregar = agregarProducto();  
     precioContainer.appendChild(precio);
-    precioContainer.appendChild(botonEliminar);
+    precioContainer.appendChild(botonAgregar); 
 
     ppc.appendChild(divImagen);
     ppc.appendChild(nombreProducto);

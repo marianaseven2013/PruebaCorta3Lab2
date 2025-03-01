@@ -1,4 +1,5 @@
-let dataProductos = ["Galletas",
+let dataProductos = [
+    "Galletas",
     "Chocobananos",
     "Shucos",
     "Hamburguesa",
@@ -7,6 +8,9 @@ let dataProductos = ["Galletas",
     "Mole",
     "Alitas",
     "Pizaa",
-    "Caldo de Mariscos"]
+    "Caldo de Mariscos"
+];
 
-export {dataProductos}    
+let carrito = [];
+
+export { dataProductos, carrito };
